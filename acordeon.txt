@@ -1,0 +1,17 @@
+
+Imprimir algo
+printf("Holi a todos")
+
+Tipos de datos
+typeinfo()
+
+Cast de variables
+cast(1.233, "int8")
+
+Matriz
+ matriz = [1,2;2,3;4,5]
+
+sizeof()
+size_equal()
+squeee()
+
