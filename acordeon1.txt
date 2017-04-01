@@ -1,0 +1,135 @@
+Octave
+
+0.- Octave
+
+Intérprete 
+Línea de comandos
+Ayuda 
+
+1.- Funciones Básicas
+
+cos
+sin
+tan
+exp
+log
+log10
+sinh
+cosh
+acos
+acosh
+asin
+asinh
+atan
+atan2
+atanh
+
+abs
+sign
+round
+floor
+ceil
+fix
+rem
+
+
+2.- Construyendo vectores
+
+vector = [1 2 3]
+vector = [1,2,3]
+vector = [1;2;3]
+vector2 = [vector 4 5 6]
+
+colon_notation = 0:5
+colon_notation = 0: 0.5 :5
+
+cero = zero(2,3)
+unos = ones(3,2)
+linspace = (10,20,10)
+logspace = (1,10,10)
+vector = [1:0.5:5 6 7]
+
+3.- Operaciones con vectores
+
+matriz = [1,2,3; 4,5,6]
+matriz * 2
+matriz + 1
+
+4.- Graficando con GNU plot
+
+angles = [0:(pi/3):pi*2]
+ y = sin (angles)
+ plot(angles, y)
+
+plot(angles, y, 'ro'); grid on
+
+plot(angles, y, 'ro--', angles, cos(angles), 'go-'); grid on
+
+legend('sin', 'cos')
+
+%guardando imagen de la gráfica
+plot(angles, sin(angles)); print('grafica2.png', '-dpng')
+
+5.- Estructuras de control
+
+if a < b
+else
+end
+
+switch a
+case 0
+disp('es cero');
+case 1
+disp('es uno');
+otherwise
+disp('no es ni uno ni cero')
+
+for n=1:5
+ array(n) = n+10
+end
+
+
+6.- Matrices
+
+a = [1,2,3;4,5,6]
+b = [1,2;3,4;5,6]
+c = a*b
+
+7.- Operaciones con matrices
+eye
+zeros
+ones
+rand
+diag
+trace
+
+8.- Impresión 3D de una ecuación
+ x = 2:0.2:4
+ y = 1:0.2:3
+ [X, Y] = meshgrid(x,y);
+ Z = (X-3)^2 - (Y-2)^2;
+ surf(X,Y,Z)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
