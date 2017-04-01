@@ -111,7 +111,11 @@ trace
  surf(X,Y,Z)
 
 
-
+Ejemplo Circulos graficados
+ x = [-2:0.1:2]; y = x;
+ [X, Y] = meshgrid(x,y);
+ Z = X.*exp(-((X-Y.^2).^2+Y.^2));
+contour(X,Y,Z), xlabel('x'), ylabel('y'), zlabel('z')
 
 
 
